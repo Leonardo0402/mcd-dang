@@ -32,7 +32,7 @@
 
 ```text
 now     = call("now-time-info")
-cal     = call("campaign-calendar")          # 结构待验证
+cal     = call("campaign-calendar")          # 已实测：按日期分段 Markdown（今日/往期回顾/未来），无结构化类型字段
 collab  = filter_by_keywords(cal, ["联名","限定","IP","快闪","×","collaboration"])
 acct    = call("query-my-account")
 # 输出：联名情报卡片 + 积分策略建议
